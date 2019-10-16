@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recipes App</string>
+    <string name="recipes_title">Recipe List</string>
+    <string name="recipe_detail_title">Recipe View, full screen mode</string>
+</resources>
