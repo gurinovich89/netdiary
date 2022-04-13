@@ -3,8 +3,9 @@ package com.netdiary.repository
 import com.netdiary.data.Recipe
 import java.util.ArrayList
 
-class RecipesRepository {
-    fun getRecipes(startIndex: Int, count: Int): List<Recipe> {
+class MockRecipesRepository : IRecipesRepository {
+
+    override fun getRecipes(startIndex: Int, count: Int): List<Recipe> {
         val result = ArrayList<Recipe>(count)
         for (i in startIndex until startIndex + count) {
             result.add(recipes[i % recipes.size])

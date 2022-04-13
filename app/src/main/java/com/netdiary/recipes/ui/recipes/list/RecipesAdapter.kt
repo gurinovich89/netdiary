@@ -1,4 +1,4 @@
-package com.netdiary.recipes.ui.recipes
+package com.netdiary.recipes.ui.recipes.list
 
 import android.content.Context
 import android.util.TypedValue
@@ -86,7 +86,7 @@ class RecipesAdapter(context: Context, val itemClick: (Recipe, Int, View) -> Uni
         }
 
         override fun areContentsTheSame(oldItem: Recipe, newItem: Recipe): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem == newItem
         }
     }
 }

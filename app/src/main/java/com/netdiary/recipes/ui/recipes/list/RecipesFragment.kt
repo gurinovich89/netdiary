@@ -1,4 +1,4 @@
-package com.netdiary.recipes.ui.recipes
+package com.netdiary.recipes.ui.recipes.list
 
 import android.os.Bundle
 import android.transition.TransitionInflater
@@ -49,7 +49,7 @@ class RecipesFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        (activity as RecipesActivity).showSystemUI()
+        (activity as? RecipesActivity)?.showSystemUI()
     }
 
     fun initObservers() {
